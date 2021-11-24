@@ -10,24 +10,66 @@ body {
   background-repeat: no-repeat;
   background-position: top;
 }
+@media (min-width: 768px) {
+  body {
+    background-size: contain;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
+@media (min-width: 992px) {
+  .content {
+    display: flex;
+  }
+}
 .content__header {
   margin: 40px auto auto 40px;
 }
 .content__header .content__header-img {
   width: 120px;
 }
+@media (min-width: 768px) {
+  .content__header .content__header-img {
+    width: 200px;
+  }
+}
 
 .content__hero {
   margin: 68.8px 39px auto 40px;
 }
+@media (min-width: 992px) {
+  .content__hero {
+    flex: 1 1 0px;
+    display: flex;
+    justify-content: center;
+  }
+}
 .content__hero .content__hero-img {
   width: 296px;
+}
+@media (min-width: 768px) {
+  .content__hero .content__hero-img {
+    width: 697px;
+  }
 }
 
 .content__main {
   margin: 60px 35px auto 36px;
   text-align: center;
+}
+@media (min-width: 992px) {
+  .content__main {
+    flex: 1 1 0px;
+    text-align: left;
+  }
 }
 .content__main h1 {
   font-family: Poppins;
@@ -39,6 +81,14 @@ body {
   text-align: center;
   color: #ffffff;
 }
+@media (min-width: 992px) {
+  .content__main h1 {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: left;
+    width: 487px;
+  }
+}
 .content__main p {
   margin-top: 16px;
   font-family: Open Sans;
@@ -49,6 +99,14 @@ body {
   /* or 150% */
   text-align: center;
   color: #ffffff;
+}
+@media (min-width: 992px) {
+  .content__main p {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    width: 487px;
+  }
 }
 .content__main button {
   margin-top: 24px;
@@ -65,15 +123,31 @@ body {
   line-height: 18px;
   /* identical to box height, or 150% */
   text-align: center;
+  cursor: pointer;
   color: #684bb1;
+}
+.content__main button:hover {
+  background-color: #e882e8;
+  color: #ffffff;
 }
 
 .content__social {
   margin-top: 62px;
   text-align: center;
 }
+@media (min-width: 992px) {
+  .content__social {
+    text-align: right;
+    margin-right: 100px;
+  }
+}
 .content__social img {
   width: 24px;
+}
+@media (min-width: 992px) {
+  .content__social img {
+    width: 40px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
