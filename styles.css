@@ -67,6 +67,7 @@ body {
 }
 @media (min-width: 992px) {
   .content__main {
+    margin-top: 120px;
     flex: 1 1 0px;
     text-align: left;
   }
@@ -129,6 +130,14 @@ body {
 .content__main button:hover {
   background-color: #e882e8;
   color: #ffffff;
+}
+@media (min-width: 992px) {
+  .content__main button {
+    height: 56px;
+    border-radius: 28px;
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .content__social {
